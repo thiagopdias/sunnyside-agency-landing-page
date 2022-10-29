@@ -1,0 +1,118 @@
+.navbarContainer {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbarContainer .menu {
+    color: hsl(0, 0%, 100%);
+    font-size: 4rem;
+
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+.navbarContainer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarContainer ul li {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.navbarContainer ul li:last-child {
+    margin-right: 0;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    border-radius: 3rem;
+    width: 10rem;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.navbarContainer ul li:last-child:hover {
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.navbarContainer ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Barlow', serif;
+    font-weight: 600;
+}
+
+.navbarContainer ul li:last-child a {
+    color: hsl(212, 27%, 19%);
+}
+
+@media screen and (max-width: 700px) {
+    .navbarContainer {
+        position: relative;
+    }
+
+    .navbarContainer .menu {
+        opacity: 1;
+    }
+
+    .navbarContainer ul {
+        position: absolute;
+        top: 160%;
+        right: 1%;
+
+        background-color: hsl(0, 0%, 100%);
+        width: 100%;
+        padding: 1rem;
+
+        flex-direction: column;
+
+        opacity: 0;
+
+        transition: .3s;
+    }
+
+    .navbarContainer ul.openMenu {
+        opacity: 1;
+    }
+
+    .navbarContainer ul::before {
+        content: '';
+        width: 0rem;
+        height: 0rem;
+        display: block;
+
+
+        border-top: 3rem solid transparent;
+        border-bottom: 3rem solid transparent;
+        border-right: 3rem solid hsl(0, 0%, 100%);
+
+        position: absolute;
+        top: -10%;
+        right: 0%;
+    }
+
+    .navbarContainer ul li {
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+
+    .navbarContainer ul li a {
+        color: hsl(210, 4%, 67%);
+    }
+
+    .navbarContainer ul li:last-child {
+        background-color: hsl(51, 100%, 49%);
+        margin-bottom: 2rem;
+    }
+
+    .navbarContainer ul li:last-child:hover {
+        background-color: hsla(51, 100%, 49%, 0.3);
+    }
+}

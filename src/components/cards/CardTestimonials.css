@@ -1,0 +1,40 @@
+.cardTestimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardTestimonials img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.cardTestimonials p {
+    margin-top: 3rem;
+
+    text-align: center;
+    color: hsl(213, 9%, 39%);
+    font-family: 'Barlow', serif;
+    font-weight: 600;
+}
+
+.cardTestimonials span#name {
+    display: inline-block;
+    margin-top: 6rem;
+
+    text-align: center;
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.cardTestimonials span#profession {
+    display: inline-block;
+    margin-top: .5rem;
+
+    text-align: center;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', serif;
+    font-weight: 600;
+}

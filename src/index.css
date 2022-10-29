@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap'); /* FONT: BARLOW */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap'); /* FONT: FRAUNCES */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+html,
+body {
+  font-size: 1.8rem;
+}
+
+#root {
+  margin:  0 auto;
+  max-width: 144rem;
+
+  box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.5), -5px -5px 10px hsla(0, 0%, 0%, 0.5);
+}

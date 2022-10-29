@@ -1,0 +1,35 @@
+.mainContainer .cardsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer .cardsContainer div#firstCards {
+    display: flex;
+    align-items: center;
+}
+
+.mainContainer .cardsContainer div#secondCards {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.mainContainer .cardsContainer div#thirdCards {
+    display: flex;
+}
+
+@media screen and (max-width: 750px) {
+    .mainContainer .cardsContainer div#firstCards {
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+
+    .mainContainer .cardsContainer div#secondCards {
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+
+    .mainContainer .cardsContainer div#thirdCards {
+        flex-direction: column;
+    }
+}
